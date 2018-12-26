@@ -10,7 +10,7 @@ How to setup a raspberry pi with multiple DS18B20 (temperature) sensors.
 - Micro SD-card
 - 1 (or more) DS18B20 temperature sensors
 - 1 breakout board (so you won't have to fiddle with a resistor and bread board)
-- Jumper cables
+- Jumper cables (female <-> female)
 
 ## Tutorial
 
