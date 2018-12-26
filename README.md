@@ -27,3 +27,5 @@ Having completed the step above you should be able to get data from the sensors.
 
 ### 4) Configure 
 Open the file `config.json` and add the folders and names of each sensor you have connected to the pi. You can choose any name you want for each sensor, you find the folder of each sensor in `/sys/bus/w1/devices/` (taking for granted that everything have gone smooth on step 2 in this tutorial).
+
+Now you can either call `$ python temp_monitor.py`, to get a nice presentation of each sensor and its temperature reading, or cal JADJADJA to upload the data to a web server.
