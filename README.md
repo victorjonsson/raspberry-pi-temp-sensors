@@ -26,4 +26,4 @@ Connect your sensors to the raspberry pi following this youtube instruction:  ht
 Having completed the step above you should be able to get data from the sensors. Now you can download the scripts in this repository and place them somewhere suitable on your raspberry pi. You can do this by installing git on the pi, or simply by doing some "cut and paste" if that is your taste.
 
 ### 4) Configure 
-Open the file `config.json` and add the folders and name of each sensor you have connected to the pi. You can choose any name you want for each sensor, you find the folder of each sensor in `/sys/bus/w1/devices/` (taking for granted that everything have gone smooth on step 2 in this tutorial).
+Open the file `config.json` and add the folders and names of each sensor you have connected to the pi. You can choose any name you want for each sensor, you find the folder of each sensor in `/sys/bus/w1/devices/` (taking for granted that everything have gone smooth on step 2 in this tutorial).
