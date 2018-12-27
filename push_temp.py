@@ -5,23 +5,23 @@ import os
 import requests
 from pprint import pprint
 
-# change cwd to be able to run as cron job
-os.chdir(os.path.dirname(os.path.realpath(__file__)))
-
-# Load config
-with open('./config.json') as f:
-    config = json.load(f)
+# Load configuration
+config = tools.load_json_config()
 
 # Setup gpio
 tools.setup_gpio()
 
-# Retreive data and output to console
+# Retreive temp data 
 temperature_data = tools.read_temperatures(config)
+
+# Send temp data to server
 response = requests.post(
     config['server_api_url'],
     json = temperature_data,
     auth=(config['server_api_user'], config['server_api_password'])
 );
+
+# Send output to console
 pprint(response)
-print('Data pushed to server')
+print('Data pushed to server:')
 print(json.dumps(temperature_data, indent=2, sort_keys=True))	

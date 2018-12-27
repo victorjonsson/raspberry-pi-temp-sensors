@@ -3,6 +3,14 @@ import glob
 import time
 import json
 
+# Get config josn
+def load_json_config():
+    current_dir_path = os.path.dirname(os.path.realpath(__file__))
+    config_file_path = current_dir_path + '/config.json'
+    with open(config_file_path) as f:
+        config = json.load(f)
+    return config
+
 # Setup gpio
 def setup_gpio():
     os.system('modprobe w1-gpio')

@@ -3,8 +3,7 @@ import json
 import time
 
 # Load config
-with open('./config.json') as f:
-    config = json.load(f)
+config = tools.load_json_config()
 
 # Setup gpio
 tools.setup_gpio()
