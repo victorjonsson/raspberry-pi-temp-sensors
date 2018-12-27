@@ -1,6 +1,6 @@
 {
-  "devices_base_dir": "/sys/bus/w1/devices/",
-  "devices": [
+  "sensors_base_dir": "/sys/bus/w1/devices/",
+  "sensors": [
     {"name": "house", "folder": "28-0517a2659aff"},
     {"name": "heat", "folder": "28-0118339733ff"}
   ],

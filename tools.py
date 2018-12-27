@@ -19,8 +19,8 @@ def setup_gpio():
 # Method used to load data from all devices
 def get_sensors(config):
     sensors = [];
-    for device in config['devices']:
-        f = open(config['devices_base_dir'] + device['folder'] + '/w1_slave')
+    for device in config['sensors']:
+        f = open(config['sensors_base_dir'] + device['folder'] + '/w1_slave')
         sensors.append({
             'name': device['name'], 
             'lines': f.readlines()
