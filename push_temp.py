@@ -1,7 +1,5 @@
 import tools
 import json
-import time
-import os
 import requests
 from pprint import pprint
 
