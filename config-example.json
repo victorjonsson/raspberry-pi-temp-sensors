@@ -3,5 +3,8 @@
   "devices": [
     {"name": "house", "folder": "28-0517a2659aff"},
     {"name": "heat", "folder": "28-0118339733ff"}
-  ]
+  ],
+  "server_api_url": "https://my-app.herokuapp.com/api/temperatures",
+  "server_api_user": "username",
+  "server_api_password": "hard-to-guess-password"
 }

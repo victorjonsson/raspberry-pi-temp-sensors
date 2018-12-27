@@ -20,7 +20,7 @@ temperature_data = tools.read_temperatures(config)
 response = requests.post(
     config['server_api_url'],
     json = temperature_data,
-    auth=(user=config['server_api_user'], password=config['server_api_password'])
+    auth=(config['server_api_user'], config['server_api_password'])
 );
 pprint(response)
 print('Data pushed to server')
